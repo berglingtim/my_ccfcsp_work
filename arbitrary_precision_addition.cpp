@@ -6,20 +6,20 @@ using namespace std;
 vector<int> add(vector<int> &A, vector<int> &B)
 {
     if (A.size() < B.size())
-        return add(B, A);
+        return add(B, A);//下面的循环是以A为例子，假如A更短会提前退出
 
-    vector<int> C;
-    int car = 0;
+    vector<int> C;//用来存储大数
+    int car = 0;//进位的暂时存储
     for (int i = 0; i < A.size(); i++)
     {
         car += A[i];
-        if (i < B.size())
+        if (i < B.size())//当B没有被遍历完的时候，才继续进行
             car += B[i];
-        C.push_back(car % 10);
-        car /= 10;
+        C.push_back(car % 10);//pushback的作用是在vector的末尾加上一个元素
+        car /= 10;//进位进行保存，下次循环继续使用
     }
 
-    if (car)
+    if (car)//如果结束循环之后car仍有说明首位需要进一
         C.push_back(car);
     return C;
 }
