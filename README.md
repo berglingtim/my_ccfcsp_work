@@ -3,7 +3,7 @@
 19382417126@163.com
 
 
-Hello, when you see this, I hope I just made more progress!
+Hello, when you see this, I hope I have  just made more progress!
 Hope you can also get something from me!
 
 
