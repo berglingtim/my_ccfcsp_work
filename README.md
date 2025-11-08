@@ -15,4 +15,4 @@ Hope you can also get something from me!
 大部分代码都来自AcWing
 
 作者：yxc
-链接：https://www.acwing.com/activity/content/code/content/39797/
+链接：https://www.acwing.com
